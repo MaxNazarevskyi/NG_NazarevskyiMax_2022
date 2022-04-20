@@ -14,11 +14,11 @@ int main()
         if (answer == 1){
             cout << "You are awesome!";
         }
-        if (answer == 0){
+        else{
             cout << "Why?";
         }
     }
-    if (age < 10){
+    else{
         cout << "Wow, you are so big";
     }
     return 0;
