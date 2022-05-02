@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int motherboard = 0, videocard = 0, CPU = 0, PC_cost = 0, accessoriesPC;
+    int motherboard = 0, videocard = 0, CPU = 0;
     float discount = 0;
     cout << "Motherboard price: " << endl;
     cin >> motherboard;
@@ -14,9 +14,7 @@ int main()
     cin >> CPU;
     cout << "Discount: ";
     cin >> discount;
-    accessoriesPC = motherboard + videocard + CPU;
-    discount = accessoriesPC * (discount * 0.01);   // transformation to percent
-    PC_cost = accessoriesPC - discount;
-    cout << "Your PC will cost: " << PC_cost;
+    discount = (motherboard + videocard + CPU) * (discount * 0.01);   // transformation to percent
+    cout << "Your PC will cost: " << (motherboard + videocard + CPU) - discount;
     return 0;
 }
