@@ -9,7 +9,7 @@ int main()
     cin >> number;
     for(int i = number; i > 0; i /= 10){
         if(i % 2 == 0){
-        sum += i % 10;
+            sum += i % 10;
         }
     }
     cout << "Sum of even numbers are = " << sum << endl;
