@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    int a, b, c, D, x1, x2, x;
+    int a, b, c, D;
     cout << "a = ";
     cin >> a;
     cout << "b = ";
@@ -23,12 +23,9 @@ int main()
         if (D < 0)
     cout << endl << "No answer";
     cout << endl;
-    x1 = (-b + sqrt(D)) / 2*a;
-    x2 = (-b - sqrt(D)) / 2*a;
-    x = (-b) / 2*a;
         if (D>0)
-            cout << "First answer: " << x1 << endl << "Second answer: " << x2 << endl;
+            cout << "First answer: " << (-b + sqrt(D)) / 2*a << endl << "Second answer: " << (-b - sqrt(D)) / 2*a << endl;
         if (D==0)
-            cout << "Answer :" << x;
+            cout << "Answer :" << (-b) / 2*a;
     return 0;
 }
