@@ -7,8 +7,7 @@ using namespace std;
 
 int main()
 {
-    int modifier1 = 1000;
-    int modifier2 = 1000;
+    int modifier = 1000;
     int firstNum = 0;
     int secondNum = 0;
     int firstArray [4];
@@ -21,16 +20,16 @@ int main()
     cout << "First array: ";
         for (int i = 0; i < 4; i++){
             cout << firstArray[i] << " ";
-            firstNum += firstArray[i] * modifier1;
-            modifier1 /= 10;
+            firstNum += firstArray[i] * modifier;
+            secondNum += secondArray[i] * modifier;
+            modifier /= 10;
         }
     cout << endl << "Second array: ";
         for (int i = 0; i < 4; i++){
             cout << secondArray[i] << " ";
-            secondNum += secondArray[i] * modifier2;
-            modifier2 /= 10;
         }
-    cout << endl << firstNum;
+    cout << endl;
+    cout << firstNum;
         if (firstNum > secondNum)
             cout << " > ";
         if (firstNum < secondNum)
