@@ -19,8 +19,8 @@ int main()
         if (D > 0)
             cout << endl << "Two answers" << endl << "First answer: " << (-b + sqrt(D)) / 2*a << endl << "Second answer: " << (-b - sqrt(D)) / 2*a << endl;
         if (D == 0)
-            cout << endl << "One answer" << endl << "Answer :" << (-b) / 2*a;
+            cout << endl << "One answer" << endl << "Answer: " << (-b) / 2*a;
         if (D < 0)
-    cout << endl << "No answer";
+            cout << endl << "No answer";
     return 0;
 }
