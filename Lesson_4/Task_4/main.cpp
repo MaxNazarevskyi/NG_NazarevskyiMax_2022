@@ -12,9 +12,12 @@ int main()
     for (int i = 0; i < Size; i++){
         if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z'))
             {
-            if (!(str[i+1]>='a' && str[i+1]<='z') || (str[i+1]>='A' && str[i+1]<='Z'))
-            words++;
+            if (!(str[i+1] >= 'a' && str[i+1] <= 'z') || (str[i+1] >= 'A' && str[i+1] <= 'Z'))
+            {
+                if (!(str[i+2] >= 'A' && str[i+2] <= 'Z'))
+                    words++;
             }
+        }
     }
     cout << words;
     return 0;
