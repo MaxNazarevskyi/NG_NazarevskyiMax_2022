@@ -14,7 +14,7 @@ int main()
             {
             if (!(str[i+1] >= 'a' && str[i+1] <= 'z') || (str[i+1] >= 'A' && str[i+1] <= 'Z'))
             {
-                if (!(str[i+2] >= 'A' && str[i+2] <= 'Z'))
+                if (!(str[i-1] >= 'A' && str[i-1] <= 'Z'))
                     words++;
             }
         }
